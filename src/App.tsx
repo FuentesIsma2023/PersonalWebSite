@@ -1,13 +1,14 @@
 // Archivo: App.tsx
 
 import { useState } from 'react';
-// ELIMINAR ESTA LÍNEA: import MatrixRain from './components/MatrixRain';
+// ELIMINAR ESTA LÍNEA: import MatrixRain from './components/MatrixRainHome';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Learning from './components/Learning';
 import Contact from './components/Contact';
+
 
 function App() {
   const [activeSection, setActiveSection] = useState('Home');

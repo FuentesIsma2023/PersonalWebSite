@@ -13,7 +13,7 @@ export default function Home({ onNavigate }: HomeProps) {
     <section className="min-h-screen flex items-center justify-center relative bg-white"> 
       
       {/* 2. EFECTO MATRIX: Color Gris y Opacidad MUY BAJA para ser sutil (0.05 es un buen punto de partida) */}
-      <MatrixRainHome color="#208080" opacity={0.50} /> 
+      <MatrixRainHome color="#208020" opacity={0.40} /> 
 
       {/* 3. CONTENIDO: Ya no necesitamos el fondo semi-transparente, solo z-index */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto"> 
