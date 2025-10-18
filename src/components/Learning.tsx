@@ -4,31 +4,59 @@ export default function Learning() {
   const posts = [
     {
       id: 1,
-      title: 'Getting Started with Google Cloud Skills Boost',
+      title: 'Cloud Computing AWS, Azure, Google Cloud',
       date: '2025-10-15',
-      excerpt: 'Started exploring Google Cloud through hands-on labs. Working through the fundamentals of compute, storage, and networking. The practical approach helps solidify concepts that seemed abstract in theory.',
+      excerpt: 'Started exploring Google Cloud, AWS, and Azure through hands-on labs. Working through the fundamentals of compute, storage, and networking. The practical approach helps solidify concepts that seemed abstract in theory.',
       category: 'Cloud Computing'
     },
     {
       id: 2,
-      title: 'Understanding Azure Virtual Networks',
+      title: 'Scripting with Python',
       date: '2025-10-08',
-      excerpt: 'Deep dive into how Azure handles networking. Learning about subnets, NSGs, and VPN gateways. Drawing connections between traditional networking and cloud infrastructure is helping me grasp the bigger picture.',
-      category: 'Networking'
-    },
-    {
-      id: 3,
-      title: 'Automating Repetitive Tasks with Bash',
-      date: '2025-09-30',
-      excerpt: 'Created my first collection of bash scripts to handle daily tasks. Started simple with log analysis and backup automation. Every script I write teaches me something new about error handling and efficiency.',
+      excerpt: 'Python script that organizes my downloads folder by file extension',
       category: 'Scripting'
     },
     {
+      id: 3,
+      title: 'Scripting with Bash',
+      date: '2025-06-30',
+      excerpt: 'Created my first collection of bash scripts to handle daily tasks. My main project is an Automator-activated script for Mac that automates the initial steps of drafting emails in Outlook. It prompts for the email type (start, follow-up, or ticket closing), uses a specific template, copies the text, and opens Outlook, ready for pasting.',
+      category: 'Scripting',
+    },
+    {
       id: 4,
+      title: 'Scripting with PowerShell',
+      date: '2025-09-22',
+      excerpt: 'Developed several utilities to streamline daily tasks. Projects include a script to quickly launch my daily applications, one to retrieve Access Control Lists (ACLs) for file systems, and another to list all currently mapped shared drives.',
+      category: 'Scripting'
+    },
+    {
+      id: 5,
+      title: 'First Steps with Kubernetes',
+      date: '2025-09-22',
+      excerpt: 'Completed initial labs, focusing on the basics of orchestration. Deployed a simple web application using a Deployment, exposed it with a Service, and gained a fundamental understanding of Pods, Nodes, and kubectl commands.',
+      category: 'DevOps'
+    },
+    {
+      id: 6,
       title: 'First Steps with Docker',
       date: '2025-09-22',
-      excerpt: 'Diving into containerization. Understanding images, containers, and how they work together is eye-opening. Working on building my first multi-container application and learning Docker Compose.',
+      excerpt: 'Took my first steps with containerization. I successfully built a custom Docker image for a simple application, pushed it to a public registry, and ran it locally, learning the core concepts of Dockerfiles and image layers.',
       category: 'DevOps'
+    },
+    {
+      id: 7,
+      title: 'First Steps with Terraform',
+      date: '2025-09-22',
+      excerpt: 'Began exploring Infrastructure as Code. Completed my first project by writing a basic extt.tf file to provision a single virtual machine (VM) and a virtual network in a cloud provider, learning the fundamental workflow of init, plan, and apply',
+      category: 'DevOps'
+    },
+    {
+      id: 8,
+      title: 'Cloud Networking',
+      date: '2025-05-25',
+      excerpt: 'Began exploring Infrastructure as Code. Completed my first project by writing a basic extt.tf file to provision a single virtual machine (VM) and a virtual network in a cloud provider, learning the fundamental workflow of init, plan, and apply',
+      category: 'Networking, Cloud Computing'
     }
   ];
 

@@ -1,4 +1,7 @@
-import { ChevronDown } from 'lucide-react';
+// Archivo: ./components/Home.tsx
+
+import { Terminal, ChevronDown } from 'lucide-react';
+import MatrixRainHome from "./MatrixRainHome"; // Importación correcta
 
 interface HomeProps {
   onNavigate: (section: string) => void;
@@ -6,23 +9,31 @@ interface HomeProps {
 
 export default function Home({ onNavigate }: HomeProps) {
   return (
-    <section className="min-h-screen flex items-center justify-center relative bg-white">
-      <div className="text-center px-6 max-w-4xl mx-auto">
+    // 1. FONDO BLANCO RESTABLECIDO
+    <section className="min-h-screen flex items-center justify-center relative bg-white"> 
+      
+      {/* 2. EFECTO MATRIX: Color Gris y Opacidad MUY BAJA para ser sutil (0.05 es un buen punto de partida) */}
+      <MatrixRainHome color="#208080" opacity={0.50} /> 
+
+      {/* 3. CONTENIDO: Ya no necesitamos el fondo semi-transparente, solo z-index */}
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto"> 
         <div className="mb-8 flex justify-center">
           <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-xl">
-            <span className="text-white text-5xl font-bold">I</span>
+            {/* TEXTO OSCURO RESTABLECIDO */}
+            <Terminal className="w-20 h-20 text-black" /> 
           </div>
         </div>
 
+        {/* TEXTOS OSCUROS RESTABLECIDOS */}
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
           Hi, I'm Ismael
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-600 mb-4 leading-relaxed">
-          I'm a Technical Support Analyst passionate about cloud technologies, scripting, and automation.
+        <p className="text-xl md:text-2xl text-blue-1200 mb-4 leading-relaxed">
+          I'm a Technical Support Analyst passionate about Cloud Technologies, Systems Administration, Scripting, and Networking.
         </p>
 
-        <p className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-800 mb-12 max-w-2xl mx-auto">
           My focus is on solving problems efficiently and learning every day.
         </p>
 
@@ -42,7 +53,8 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
 
         <div className="animate-bounce">
-          <ChevronDown className="w-8 h-8 text-gray-400 mx-auto" />
+          {/* TEXTO OSCURO RESTABLECIDO */}
+          <ChevronDown className="w-8 h-8 text-gray-900 mx-auto" /> 
         </div>
       </div>
     </section>

@@ -18,14 +18,17 @@ export default function About() {
               <div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-3">Professional Background</h3>
                 <p className="text-gray-700 leading-relaxed mb-3">
-                  I bring approximately 15 years of experience in physical security, combined with about 3 years
-                  in IT. Currently, I work as a Technical Support Analyst at Warner Brothers Discovery, where I
-                  solve technical challenges and support critical infrastructure.
+                I bring approximately 15 years of experience in physical security, complemented by over 3 years in Information Technology.
+                </p>
+                <p className="text-gray-700 leading-relaxed mb-3">
+                Currently, as a Jr. Technical Support Analyst at Warner Bros. 
+                Discovery, I resolve complex technical challenges and provide support accross a global infrastructure. 
+                I am proficient with ServiceNow, VMware, Microsoft Exchange, and various endpoint management tools.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  My transition from physical security to IT has given me a unique perspective on problem-solving,
-                  risk assessment, and operational reliability. I understand the importance of security, stability,
-                  and efficient systems.
+                This transition has fostered a unique approach to problem-solving: 
+                I naturally integrate the security, risk assessment, and operational continuity 
+                principles of physical security into IT.
                 </p>
               </div>
             </div>

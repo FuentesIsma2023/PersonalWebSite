@@ -11,13 +11,14 @@ export default function Skills() {
     'Packet Tracer labs and firewall configuration',
     'Cybersecurity awareness (phishing, ransomware, MITM, DoS/DDoS, encryption basics)',
     'Device management with Intune and Jamf (basic level)',
-    'Collaboration tools: Outlook, Slack, Teams, Zoom, Confluence'
+    'Collaboration tools: Outlook, Slack, Teams, Zoom, Confluence',
+    'Ms Excel: Macros creation, Pivot Tables, Dashboards'
   ];
 
   const learningSkills = [
     'Cloud Computing: Azure, Google Cloud, AWS',
     'Scripting: Bash, Python, PowerShell',
-    'Automation with macOS Automator',
+    'Automation: Automator, Microsoft Power Automate, Jenkins',
     'DevOps tools: Docker, Kubernetes, Terraform',
     'Advanced networking concepts and configuration'
   ];
@@ -65,13 +66,15 @@ export default function Skills() {
                 </div>
               ))}
             </div>
-
-            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
-              <p className="text-gray-600 leading-relaxed italic">
-                I'm actively expanding my knowledge through hands-on labs, online courses, and practical projects.
-                My learning approach combines formal education with real-world application.
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-8 backdrop-blur-sm">
+              <h3 className="text-2xl font-bold text-blue-600 mb-4 font-mono">Philosophy</h3>
+              <p className="text-gray-700 leading-relaxed italic">
+               "Every problem is an opportunity to learn something new. I approach technical
+               challenges with curiosity and persistence, always seeking to understand the
+               'why' behind the solution."
               </p>
             </div>
+            
           </div>
         </div>
       </div>

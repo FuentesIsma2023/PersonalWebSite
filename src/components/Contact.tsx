@@ -32,20 +32,20 @@ export default function Contact() {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/ismael',
+      href: 'https://www.linkedin.com/in/isma2025/?locale=es_ES',
       description: 'Connect professionally'
     },
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/ismael',
+      href: 'https://github.com/FuentesIsma2023',
       description: 'View my code'
     },
     {
       icon: Mail,
       label: 'Email',
-      href: 'mailto:ismael@example.com',
-      description: 'ismael@example.com'
+      href: 'mailto:smlnjrfnts@gmail.com',
+      description: 'smlnjrfnts@gmail.com'
     }
   ];
 

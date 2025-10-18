@@ -11,7 +11,7 @@ export default function Navigation({ activeSection, onNavigate }: NavigationProp
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-gray-900 font-semibold text-lg">Ismael</span>
+            <span className="text-gray-900 font-semibold text-lg">Ismael Najera Fuentes</span>
           </div>
 
           <div className="hidden md:flex gap-8">
