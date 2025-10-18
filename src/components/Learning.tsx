@@ -55,7 +55,7 @@ export default function Learning() {
       id: 8,
       title: 'Cloud Networking',
       date: 'n/A',
-      excerpt: 'Began exploring Infrastructure as Code. Completed my first project by writing a basic extt.tf file to provision a single virtual machine (VM) and a virtual network in a cloud provider, learning the fundamental workflow of init, plan, and apply',
+      excerpt: 'I possess hands-on experience in multi-cloud networking, having successfully provisioned and managed Load Balancers across Google Cloud Platform (GCP), Microsoft Azure, and Amazon Web Services (AWS). My security expertise includes configuring and implementing network-level protection using Firewalls (e.g., GCP VPC Firewall Rules) and Network Security Groups (NSGs) in lab environments.🌐',
       category: 'Networking, Cloud Computing'
     }
   ];
