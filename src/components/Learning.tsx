@@ -54,7 +54,7 @@ export default function Learning() {
     {
       id: 8,
       title: 'Cloud Networking',
-      date: '2025-03-25 - Current',
+      date: 'n/A',
       excerpt: 'Began exploring Infrastructure as Code. Completed my first project by writing a basic extt.tf file to provision a single virtual machine (VM) and a virtual network in a cloud provider, learning the fundamental workflow of init, plan, and apply',
       category: 'Networking, Cloud Computing'
     }
