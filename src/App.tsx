@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import MatrixRain from './components/MatrixRain';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
 import About from './components/About';
@@ -17,11 +16,10 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white relative overflow-x-hidden">
-      <MatrixRain />
+    <div className="min-h-screen bg-white">
       <Navigation activeSection={activeSection} onNavigate={handleNavigate} />
 
-      <main className="relative z-10">
+      <main>
         <div id="home">
           <Home onNavigate={handleNavigate} />
         </div>
@@ -39,13 +37,13 @@ function App() {
         </div>
       </main>
 
-      <footer className="relative z-10 border-t border-green-500/30 bg-black/90 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-6 py-8 text-center">
-          <p className="text-gray-400 font-mono text-sm">
-            © 2025 Ismael. Built with React + TypeScript + Tailwind CSS
+      <footer className="border-t border-gray-200 bg-white">
+        <div className="max-w-6xl mx-auto px-6 py-8 text-center">
+          <p className="text-gray-600 text-sm">
+            © 2025 Ismael. Built with React, TypeScript, and Tailwind CSS
           </p>
-          <p className="text-green-400 font-mono text-xs mt-2">
-            &gt; Ready to solve complex problems and grow in cloud technologies
+          <p className="text-gray-500 text-xs mt-2">
+            Solving problems and growing in cloud technologies
           </p>
         </div>
       </footer>

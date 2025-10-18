@@ -1,153 +1,76 @@
-import { CheckCircle, TrendingUp, Code, Globe, Server, Shield, Database, Terminal as TerminalIcon } from 'lucide-react';
+import { Code, TrendingUp } from 'lucide-react';
 
 export default function Skills() {
   const currentSkills = [
-    {
-      category: 'Web Development',
-      icon: Globe,
-      items: ['Basic web creation with HTML5 and CSS3']
-    },
-    {
-      category: 'Systems & Scripting',
-      icon: TerminalIcon,
-      items: [
-        'Confident using Linux terminal',
-        'Writing basic scripts (Bash, Python, PowerShell)'
-      ]
-    },
-    {
-      category: 'Networking',
-      icon: Server,
-      items: [
-        'Networking fundamentals and troubleshooting',
-        'Packet Tracer labs and firewall setup',
-        'Network configuration and diagnostics'
-      ]
-    },
-    {
-      category: 'Security',
-      icon: Shield,
-      items: [
-        'Cybersecurity concepts: phishing, ransomware, MITM',
-        'DoS/DDoS attack patterns',
-        'Encryption basics and security best practices'
-      ]
-    },
-    {
-      category: 'Enterprise Tools',
-      icon: Database,
-      items: [
-        'ServiceNow (reports, templates)',
-        'Microsoft Exchange (mailboxes, distribution lists)',
-        'VMware Horizon and vSphere',
-        'Device management: Intune and Jamf (basic)'
-      ]
-    },
-    {
-      category: 'Collaboration',
-      icon: Code,
-      items: [
-        'Outlook, Slack, Teams, Zoom',
-        'Confluence documentation',
-        'Cross-team communication'
-      ]
-    }
+    'HTML5 and CSS3 for basic web creation',
+    'Linux terminal and scripting basics',
+    'ServiceNow (reports, templates)',
+    'Microsoft Exchange (mailboxes, distribution lists)',
+    'VMware Horizon and vSphere',
+    'Networking fundamentals and troubleshooting',
+    'Packet Tracer labs and firewall configuration',
+    'Cybersecurity awareness (phishing, ransomware, MITM, DoS/DDoS, encryption basics)',
+    'Device management with Intune and Jamf (basic level)',
+    'Collaboration tools: Outlook, Slack, Teams, Zoom, Confluence'
   ];
 
   const learningSkills = [
-    {
-      category: 'Networking',
-      items: ['Advanced concepts', 'Practical configuration', 'Network automation']
-    },
-    {
-      category: 'Cloud Computing',
-      items: ['Microsoft Azure', 'Google Cloud Platform', 'Amazon Web Services']
-    },
-    {
-      category: 'Scripting',
-      items: ['Advanced Bash scripting', 'Python for automation', 'PowerShell DSC']
-    },
-    {
-      category: 'Automation',
-      items: ['Automator for macOS', 'Workflow optimization', 'Task scheduling']
-    },
-    {
-      category: 'DevOps',
-      items: ['Docker containerization', 'Kubernetes orchestration', 'Terraform IaC']
-    }
+    'Cloud Computing: Azure, Google Cloud, AWS',
+    'Scripting: Bash, Python, PowerShell',
+    'Automation with macOS Automator',
+    'DevOps tools: Docker, Kubernetes, Terraform',
+    'Advanced networking concepts and configuration'
   ];
 
   return (
-    <section className="min-h-screen py-32 px-6 relative">
-      <div className="max-w-7xl mx-auto z-10 relative">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 font-mono">
-          <span className="text-green-400">$</span> Technical Skills
+    <section className="min-h-screen py-32 px-6 bg-white">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Technical Skills
         </h2>
+        <div className="w-20 h-1 bg-blue-600 mb-12"></div>
 
-        <div className="grid lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <div className="flex items-center gap-3 mb-8">
-              <CheckCircle className="w-8 h-8 text-green-400" />
-              <h3 className="text-3xl font-bold text-green-400 font-mono">What I Can Do</h3>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                <Code className="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900">What I Know</h3>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-3">
               {currentSkills.map((skill, index) => (
-                <div
-                  key={index}
-                  className="bg-black/50 border border-green-500/30 rounded-lg p-6 backdrop-blur-sm hover:border-green-500/60 transition-all"
-                >
-                  <div className="flex items-center gap-3 mb-4">
-                    <skill.icon className="w-6 h-6 text-green-400" />
-                    <h4 className="text-xl font-semibold text-white font-mono">{skill.category}</h4>
-                  </div>
-                  <ul className="space-y-2">
-                    {skill.items.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-gray-300">
-                        <span className="text-green-400 mt-1">▸</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                <div key={index} className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-700">{skill}</p>
                 </div>
               ))}
             </div>
           </div>
 
           <div>
-            <div className="flex items-center gap-3 mb-8">
-              <TrendingUp className="w-8 h-8 text-green-400" />
-              <h3 className="text-3xl font-bold text-green-400 font-mono">What I'm Learning</h3>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                <TrendingUp className="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900">What I'm Learning</h3>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-3 mb-8">
               {learningSkills.map((skill, index) => (
-                <div
-                  key={index}
-                  className="bg-black/50 border border-green-500/30 rounded-lg p-6 backdrop-blur-sm hover:border-green-500/60 transition-all group"
-                >
-                  <h4 className="text-xl font-semibold text-white mb-4 font-mono flex items-center gap-2">
-                    {skill.category}
-                    <span className="text-green-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                      [in progress]
-                    </span>
-                  </h4>
-                  <ul className="space-y-2">
-                    {skill.items.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-gray-300">
-                        <span className="text-green-400 mt-1">◆</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="mt-4 w-full bg-gray-800 rounded-full h-2 overflow-hidden">
-                    <div
-                      className="bg-gradient-to-r from-green-500 to-emerald-400 h-full rounded-full animate-pulse"
-                      style={{ width: `${Math.random() * 30 + 40}%` }}
-                    />
-                  </div>
+                <div key={index} className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-700">{skill}</p>
                 </div>
               ))}
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <p className="text-gray-600 leading-relaxed italic">
+                I'm actively expanding my knowledge through hands-on labs, online courses, and practical projects.
+                My learning approach combines formal education with real-world application.
+              </p>
             </div>
           </div>
         </div>

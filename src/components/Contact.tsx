@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, Send, Terminal } from 'lucide-react';
+import { Mail, Linkedin, Github, Send } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Contact() {
@@ -33,77 +33,70 @@ export default function Contact() {
       icon: Linkedin,
       label: 'LinkedIn',
       href: 'https://linkedin.com/in/ismael',
-      color: 'hover:text-blue-400'
+      description: 'Connect professionally'
     },
     {
       icon: Github,
       label: 'GitHub',
       href: 'https://github.com/ismael',
-      color: 'hover:text-gray-400'
+      description: 'View my code'
     },
     {
       icon: Mail,
       label: 'Email',
       href: 'mailto:ismael@example.com',
-      color: 'hover:text-green-400'
+      description: 'ismael@example.com'
     }
   ];
 
   return (
-    <section className="min-h-screen py-32 px-6 relative">
-      <div className="max-w-5xl mx-auto z-10 relative">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-mono">
-          <span className="text-green-400">$</span> Get in Touch
+    <section className="min-h-screen py-32 px-6 bg-white">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Contact
         </h2>
-        <p className="text-gray-400 mb-12 text-lg">
+        <div className="w-20 h-1 bg-blue-600 mb-6"></div>
+        <p className="text-xl text-gray-600 mb-12">
           Let's connect and discuss opportunities or technical challenges
         </p>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <div className="bg-black/50 border border-green-500/30 rounded-lg p-8 backdrop-blur-sm mb-8">
-              <h3 className="text-2xl font-bold text-green-400 mb-6 font-mono flex items-center gap-2">
-                <Terminal className="w-6 h-6" />
-                Connect With Me
-              </h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Get in Touch</h3>
 
-              <div className="space-y-4">
-                {socialLinks.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center gap-4 p-4 bg-black/30 rounded-lg border border-green-500/20 hover:border-green-500/60 transition-all group ${link.color}`}
-                  >
-                    <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center group-hover:bg-green-500/20 transition-all">
-                      <link.icon className="w-6 h-6 text-green-400" />
-                    </div>
-                    <div>
-                      <div className="font-mono text-white">{link.label}</div>
-                      <div className="text-sm text-gray-400">{link.href.replace('https://', '').replace('mailto:', '')}</div>
-                    </div>
-                  </a>
-                ))}
-              </div>
+            <div className="space-y-4 mb-8">
+              {socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all group"
+                >
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-all">
+                    <link.icon className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-900">{link.label}</div>
+                    <div className="text-sm text-gray-600">{link.description}</div>
+                  </div>
+                </a>
+              ))}
             </div>
 
-            <div className="bg-black/50 border border-green-500/30 rounded-lg p-8 backdrop-blur-sm">
-              <h3 className="text-xl font-bold text-white mb-4 font-mono">Availability</h3>
-              <p className="text-gray-300 leading-relaxed mb-2">
-                Open to opportunities in:
-              </p>
-              <ul className="space-y-2 text-gray-300">
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <h4 className="font-semibold text-gray-900 mb-3">Open to Opportunities</h4>
+              <ul className="space-y-2 text-gray-700">
                 <li className="flex items-center gap-2">
-                  <span className="text-green-400">▸</span>
+                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
                   Technical Support roles
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-green-400">▸</span>
+                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
                   Cloud infrastructure positions
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-green-400">▸</span>
+                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
                   DevOps and automation projects
                 </li>
               </ul>
@@ -111,12 +104,12 @@ export default function Contact() {
           </div>
 
           <div>
-            <form onSubmit={handleSubmit} className="bg-black/50 border border-green-500/30 rounded-lg p-8 backdrop-blur-sm">
-              <h3 className="text-2xl font-bold text-white mb-6 font-mono">Send a Message</h3>
+            <form onSubmit={handleSubmit} className="bg-white rounded-xl p-8 border border-gray-200 shadow-sm">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Send a Message</h3>
 
-              <div className="space-y-6">
+              <div className="space-y-5">
                 <div>
-                  <label htmlFor="name" className="block text-green-400 mb-2 font-mono text-sm">
+                  <label htmlFor="name" className="block text-gray-700 mb-2 font-medium text-sm">
                     Name
                   </label>
                   <input
@@ -126,13 +119,13 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full bg-black/50 border border-green-500/30 rounded px-4 py-3 text-white focus:outline-none focus:border-green-500 transition-colors font-mono"
+                    className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
                     placeholder="Your name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-green-400 mb-2 font-mono text-sm">
+                  <label htmlFor="email" className="block text-gray-700 mb-2 font-medium text-sm">
                     Email
                   </label>
                   <input
@@ -142,13 +135,13 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full bg-black/50 border border-green-500/30 rounded px-4 py-3 text-white focus:outline-none focus:border-green-500 transition-colors font-mono"
+                    className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
                     placeholder="your.email@example.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-green-400 mb-2 font-mono text-sm">
+                  <label htmlFor="message" className="block text-gray-700 mb-2 font-medium text-sm">
                     Message
                   </label>
                   <textarea
@@ -157,8 +150,8 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    rows={6}
-                    className="w-full bg-black/50 border border-green-500/30 rounded px-4 py-3 text-white focus:outline-none focus:border-green-500 transition-colors font-mono resize-none"
+                    rows={5}
+                    className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all resize-none"
                     placeholder="Your message..."
                   />
                 </div>
@@ -166,7 +159,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={status !== 'idle'}
-                  className="w-full bg-green-500 text-black font-mono font-semibold py-3 rounded hover:bg-green-400 transition-all shadow-lg shadow-green-500/50 hover:shadow-green-400/50 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-blue-600 text-white font-medium py-3 rounded-lg hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {status === 'idle' && (
                     <>
